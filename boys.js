@@ -1,4 +1,3 @@
-console.log("strap in")
 
 var bands = ["Boyz II Men", "NSync", "New Kids on the Block", "98 Degrees", "One Direction"];
 var vegetables = ["Carrots", "Kale", "Zucchini", "Broccoli", "Squash"];
@@ -13,19 +12,25 @@ var currentBand = "";
 var currentVeggie = "";
 
 // Get a reference to the appropriate DOM element for bands
-var bandElement = document.getElementById(???);
+var bandElement = document.getElementById("boy-bands");
 
 // Get a reference to the appropriate DOM element for vegetables
-var veggieElement = ???;
+var veggieElement = document.getElementById("vegetables");
 
 // Start looping
 for (var loopTracker = 0; loopTracker < loopCount; loopTracker += 1) {
 
   // Add the band names into the correct <div>
-  currentBand = ???;
+  currentBand = bands[loopTracker] + " ";
+  bandElement.innerHTML += "<li>" + currentBand + "</li>";
+
 
 
   // Add the veggie names into the correct <div>
-  currentVeggie = ???;
+  currentVeggie = vegetables[loopTracker] + " ";
+  veggieElement.innerHTML += "<li>" + currentVeggie + "</li>";
 
 }
+
+
+
